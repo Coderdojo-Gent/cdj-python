@@ -1,14 +1,10 @@
 # CoderDojo Gent Python Opdrachten
 
-TBD
+Een verzameling Python opdrachten en links naar leuke opdrachten in andere locaties.
 
 ## Python Installeren
 
-TBD
-
-https://docs.google.com/document/d/1XaxzWhyDiMx94hDAjPL9FMIXcfV5nve-kAT4ARv0Obc/edit
-
-https://www.python.org/downloads/
+[Python installeren](INSTALL.md)
 
 ## Boeken
 
