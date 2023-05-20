@@ -47,8 +47,7 @@ Coördinaten worden gegeven als (latitude, longitude). De coördinaten van het R
 ## Het ISS op een kaart tekenen
 Dan kunnen we nu het ISS op een kaart tekenen. Hiervoor het je de package Turtle nodig, dewelke niet standaard geïnstalleerd is met Python. Als je deze nog niet geïnstalleerd hebt, kan je deze installeren door ```pip install PythonTurtle``` te runnen in de command line (het venster onderaan je scherm in Visual Studio Code, waar je anders de code runt.). Om Turtle dan te gebruiken in je code, voeg je bovenaan de volgende lijn code toe ```import turtle```.
 
-De kaart en de icoontjes voor het ISS kun je downloaden van de CoderDojo Gent GitHub pagina. Sla ze vervolgens op in hetzelfde mapje als je code.
-TODO: add link.
+De kaart en de icoontjes voor het ISS kun je downloaden van [deze google drive folder](https://drive.google.com/drive/folders/1R7-GAa9YvvdS5jg6B9MmwqBiIwSzbLsm?usp=sharing). Sla ze vervolgens op in hetzelfde mapje als je code.
 
 Dan kunnen we nu starten met de kaart te plotten. Hiervoor moeten we eerst een Turtle scherm aanmaken. We maken dit scherm 720 pixels op 360 pixels groot, want dat is de grootte van de afbeelding die we straks zullen inladen. We passen ook de coördinaten aan, zodat deze overeenkomen met de lengte- en breedtegraden.
 ```
@@ -58,7 +57,7 @@ scherm.setworldcoordinates(-180, -90, 180, 90)
 scherm.bgpic('map.gif')
 ```
 
-Dan kunnen we nu het icoontje toevoegen op de huidige locatie van het ISS. Er zijn twee icoontjes, namelijk `iss.gif` en `iss2.gif`, terug te vinden in de map op GitHub. Kies zelf maar dewelke je de mooiste vindt! Dan kunnen we met deze afbeelding een Turtle objectje aanmaken. Het ISS start altijd in het midden van de kaart, maar we kunnen het direct naar de juiste lcoatie bewegen met de `goto` functie.
+Dan kunnen we nu het icoontje toevoegen op de huidige locatie van het ISS. Er zijn twee icoontjes, namelijk `iss.gif` en `iss2.gif`, terug te vinden in de google drive folder. Kies zelf maar dewelke je de mooiste vindt! Dan kunnen we met deze afbeelding een Turtle objectje aanmaken. Het ISS start altijd in het midden van de kaart, maar we kunnen het direct naar de juiste lcoatie bewegen met de `goto` functie.
 ```
 scherm.register_shape('iss.gif')
 iss = turtle.Turtle()
@@ -70,7 +69,7 @@ iss.goto(longitude, latitude)
 
 Als je een paar minuten wacht, zie je dan dat het ISS ondertussen bewogen is?
 
-**Hint**: Sluit je scherm onmiddelijk na het visualiseren van de kaart? Dan kan je onderaan je code `time.sleep(10)` toevoegen. Dit zal je code 10 seconden pauzeren, zodat je rustig de tijd hebt om je kaart te bewonderen voor deze sluit.
+**Hint**: Sluit je scherm onmiddelijk na het visualiseren van de kaart? Dan kan je onderaan je code `time.sleep(10)` toevoegen. Dit zal je code 10 seconden pauzeren, zodat je rustig de tijd hebt om je kaart te bewonderen voor deze sluit. Hiervoor moet je wel de module `time` importeren.
 
 ## Tekst toevoegen op de kaart
 We willen nu ook een klein tekstje toevoegen op de kaart om te tonen hoeveel astronauten er zich momenteel in de ruimte vinden.
@@ -79,10 +78,10 @@ Hiervoor maken we opnieuw een turtle objectje aan, en voegen dit toe aan de afbe
 tekst_astronauten = turtle.Turtle()
 tekst_astronauten.penup()
 ```
+
 **Opdracht**: Pas het turtle object `tekst_astronauten` aan zodat er een tekstje op de kaart verschijnt met het aantal astronauten die zich momenteel in de ruimte bevinden. Met de functie `goto` kun je de positie van de tekst kiezen, met de functie `color` kan je de kleur van de tekst kiezen, en tot slotte met `write` kun je de tekst zelf toevoegen aan de het turtle objectje.
 
 ## Oplossing
 
-De oplossing van dit project kan je ook vinden op de CoderDojo GitHub, in dit bestandje.
-Dit project is gebaseerd op [dit project](https://projects.raspberrypi.org/en/projects/where-is-the-space-station/0
-) van de raspberry pi foundation.
+De oplossing van dit project kan je ook vinden op de CoderDojo GitHub, in [dit bestandje](https://github.com/Coderdojo-Gent/cdj-python/blob/master/waar_is_het_iss/waar_is_het_iss.py).
+Dit project is gebaseerd op [dit project](https://projects.raspberrypi.org/en/projects/where-is-the-space-station/0) van de raspberry pi foundation.
