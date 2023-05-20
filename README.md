@@ -15,6 +15,7 @@ Een verzameling Python opdrachten en links naar leuke opdrachten in andere locat
 | 1 - Beginner     | Geheime Boodschappen    | [geheime_boodschappen/](geheime_boodschappen/README.md)                                                                     |
 | 1 - Beginner     | Schildpad               | [turtle](turtle/Python_beginner_opdrachtjes_Turtle.pdf) (via Coderdojo Belgium Google Drive)                                |
 | 2 - Gevorderd    | Galgje                  | [galgje/](galgje/README.md)                                                                                                 |
+| 2 - Gevorderd    | Waar is het ISS?        | [waar_is_het_iss/](waar_is_het_iss/README.md)                                                                                                 |
 | 2 - Gevorderd    | Galgje Uitbreiding      | [galgje-v2/](galgje-v2/README.md)                                                                                           |
 | 3 - Vergevorderd | Snake                   | [snake](snake/pygame%20cursus.pdf) (via Aagje Reynders)                                                                     |
 
