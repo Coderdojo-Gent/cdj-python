@@ -118,7 +118,31 @@ knop2.grid(column=1, row=0)
 venster.mainloop()
 ```
 
+We hebben natuurlijk een groter speelveld nodig. Probeer de code hierboven aan te passen zodat we een veld krijgen met 4 rijen van telkens 6 knoppen. Maak gebruik van lussen zodat je niet de code voor elke knop moet herhalen.
+
+Tip: een lus waarbij de variable `x` de waardes 0 tot 3 zal hebben kan je zo maken:
+
+```python
+for x in range(4):
+    print(f{x is {x}})
+```
+
+## Stap 3: Knoppen met emojis en acties
+
+We kunnen op een knop tekst zetten. Of in de plaats van tekst, een emoji!
+
+Dit doe je door in `Button` een argument `text="de tekst die op de knop komt"` toe te voegen.
+
+Probeer een van de knoppen in je code aan te passen op deze manier:
+
+```python
+# Toon een emoji op de knop
+knop = Button(venster, width=5, height=5, text="\U0001F609")
+```
+
 Om iets te laten gebeuren wanneer er op een knop wordt geklikt moeten we een _functie_ meegeven als we een knop (`Button`) maken. Die functie moeten we dan natuurlijk ook schrijven.
+
+We kunnen die functie gebruiken om de tekst van de knop de veranderen!
 
 Voeg onderstaande code toe en kijk wat er gebeurd.
 
@@ -128,8 +152,15 @@ from tkinter import Tk, Button, messagebox
 def klik_op_de_knop():
     messagebox.showinfo("Hallo", "Goed geklikt!")
 
-knop1 = Button(root, command=klik_op_de_knop, width=5, height=5)
+# Als op knop1 wordt geklikt dan voeren we functie klik_op_de_knop uit
+knop1 = Button(venster, command=klik_op_de_knop, width=5, height=5)
 ```
+
+## Stap 4: Speelveld met emojis
+
+We vertrekken van het speelveld van stap 2 en de random lijst met emojis van stap 1.
+
+We moeten deze stappen nu samenvoegen en voor elke knop onthouden welke emoji er bij hoort. Voor elke `x, y` positie moeten we kunnen opzoeken welke knop (`Button`) op die positie staat, en welke emoji 
 
 ## Todo
 
@@ -137,10 +168,10 @@ Resizable:
 
 ```
 # https://stackoverflow.com/a/7591453
-root = Tk()
-frame = Frame(root)
-root.rowconfigure(0, weight=1)
-root.columnconfigure(0, weight=1)
+venster = Tk()
+frame = Frame(venster)
+venster.rowconfigure(0, weight=1)
+venster.columnconfigure(0, weight=1)
 frame.grid(row=0, column=0, sticky="news")
 grid = Frame(frame)
 grid.grid(sticky="news", column=0, row=7, columnspan=2)
@@ -156,5 +187,5 @@ for x in range(10):
 frame.columnconfigure(tuple(range(10)), weight=1)
 frame.rowconfigure(tuple(range(5)), weight=1)
 
-root.mainloop()
+venster.mainloop()
 ```

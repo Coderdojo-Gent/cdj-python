@@ -53,18 +53,16 @@ symbolen = [
 symbolen.extend(symbolen)
 random.shuffle(symbolen)
 
-for x in range(6):
-    for y in range(4):
+for x in range(4):
+    for y in range(6):
         knop = Button(
             command=lambda x=x, y=y: toon_symbool(x, y),
             width=5,
             height=3,
             font=font.Font(size=32),
         )
-        knop.grid(column=x, row=y)
+        knop.grid(row=x, column=y)
         knoppen[x, y] = knop
         knop_symbolen[x, y] = symbolen.pop()
-        # knoppen[x, y]["text"] = knop_symbolen[x, y]
-        knoppen[x, y]["text"] = ""
 
 venster.mainloop()
