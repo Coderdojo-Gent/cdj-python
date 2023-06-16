@@ -4,35 +4,43 @@ import time
 from tkinter import Tk, Button, DISABLED, font
 
 
-def toon_symbool(x, y):
-    print(f"toon_symbool({x}, {y})")
-    global eerste
-    global vorigeX, vorigeY
-    knoppen[x, y]["text"] = knop_symbolen[x, y]
-    knoppen[x, y].update()
-    if eerste:
-        vorigeX = x
-        vorigeY = y
-        eerste = False
-    elif vorigeX != x or vorigeY != y:
-        if knoppen[vorigeX, vorigeY]["text"] != knoppen[x, y]["text"]:
-            time.sleep(1.0)
-            knoppen[vorigeX, vorigeY]["text"] = ""
-            knoppen[x, y]["text"] = ""
-        else:
-            knoppen[vorigeX, vorigeY]["command"] = DISABLED
-            knoppen[x, y]["command"] = DISABLED
-        eerste = True
+def klik_op_de_knop(x, y):
+    global eerste_knop
+
+    # Dit is de knop (Button) waar op geklikt is
+    knop = knoppen[x, y]
+    # Dit is de emoji die bij deze knop hoort
+    emoji = knop_symbolen[x, y]
+    # Nu veranderen we de text van die knop met de emoji
+    knop["text"] = emoji
+    knop.update()
+
+    # Als we weten wat de eerste knop was
+    if eerste_knop:
+        # We doen enkel iets als er niet 2 keer op dezelfde knop is geklikt
+        if eerste_knop != knop:
+            # Als de 2 knoppen niet dezelfde emoji hebben
+            if eerste_knop["text"] != knop["text"]:
+                time.sleep(1.0)
+                eerste_knop["text"] = ""
+                knop["text"] = ""
+            # Als de 2 knoppen WEL dezelfe emoji hebben mogen ze de functie niet meer uitvoeren
+            else:
+                eerste_knop["command"] = DISABLED
+                knop["command"] = DISABLED
+            # Vergeet de eerste knop terug
+            eerste_knop = None
+    else:
+        # Onthou wat de eerste knop was
+        eerste_knop = knop
 
 
 venster = Tk()
 venster.title("memory")
 venster.resizable(width=False, height=False)
 
+eerste_knop = None
 knoppen = {}
-eerste = True
-vorigeX = 0
-vorigeY = 0
 knop_symbolen = {}
 # https://unicode.org/emoji/charts/full-emoji-list.html
 symbolen = [
@@ -56,7 +64,7 @@ random.shuffle(symbolen)
 for x in range(4):
     for y in range(6):
         knop = Button(
-            command=lambda x=x, y=y: toon_symbool(x, y),
+            command=lambda x=x, y=y: klik_op_de_knop(x, y),
             width=5,
             height=3,
             font=font.Font(size=32),

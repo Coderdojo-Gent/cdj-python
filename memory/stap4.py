@@ -28,11 +28,16 @@ venster.title("memory")
 # niet kunnen worden aangepast (resize)
 venster.resizable(width=False, height=False)
 
+knoppen = {}
+knop_symbolen = {}
+
 for x in range(4):
     for y in range(6):
         knop = Button(venster, width=5, height=5, text=f"knop ({x}, {y})")
         knop.grid(row=x, column=y)
 
+        knoppen[x, y] = knop
+        knop_symbolen[x, y] = symbolen.pop()
 
 # Hiermee starten we het programma
 venster.mainloop()
