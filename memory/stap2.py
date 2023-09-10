@@ -12,7 +12,7 @@ venster.resizable(width=False, height=False)
 
 for x in range(4):
     for y in range(6):
-        knop = Button(venster, width=5, height=5, text=f"knop ({x}, {y})")
+        knop = Button(width=5, height=5, text=f"knop ({x}, {y})")
         knop.grid(row=x, column=y)
 
 
