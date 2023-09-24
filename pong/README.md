@@ -45,7 +45,33 @@ We willen ons speelveld (= het volledige venster) ook helemaal zwart maken. Dat 
 
 `(0, 0, 0)` is de _RGB kleurcode_ voor zwart. Op de website https://www.google.com/search?q=google+color+picker kan je kleuren kiezen en de RGB code aflezen. Als je wil kan je ook een ander kleur dan zwart proberen.
 
-## Step 2: Constanten en het balletje
+## Step 2: Constanten, coördinaten en het balletje
+
+Waarden zoals kleurcodes en de hoogte en breedte van het venster zullen we meer dan 1 keer nodig hebben in ons programma. We kunnen fouten vermijden en ons programma duidelijker maken door die waarden 1 keer in een variabele te steken en dan enkel die variabele te gebruiken. Een variable waarvan de waarde nooit zal veranderen noemen we een _constante_ en schrijven we met `HOOFDLETTERS`. Voeg de volgende code toe bovenaan je programma (net na de `import`) en vervang dan overal waarden met de naam van de juiste constante.
+
+```python
+VENSTER_HOOGTE = 600
+VENSTER_BREEDTE = 800
+
+KLEUR_ZWART = (0, 0, 0)
+```
+
+Nu willen we een balletje tekenen. Het zal een andere kleur moeten hebben dan de achtergrond. Kies een kleur en voeg die alvast toe aan de constanten. Bvb. `KLEUR_WIT = (255, 255, 255)`.
+
+Een _coördinaat_ is een getal waarmee we de plaats van een bepaald punt in ons speelveld kunnen voorstellen. We hebben altijd een _X-coördinaat_ en een _Y-coördinaat_. De X bepaalt de horizontale positie (de breedte) en de Y bepaalt de verticale positie (de hoogte). X-Y coördinaten schrijven we als `(x, y)`. De linker-bovenhoek van het veld is altijd `(0, 0)`. Als we weten dat ons veld `800` breed is, dan weten we dat de rechter-bovenhoek `(800, 0)` is. Precies het midden van het veld kunnen we berekenen door de breedte en de hoogte te delen door 2. Dan krijgen we ... `(400, 300)`.
+
+![](pong_speelveld_leeg.jpg)
+
+Het balletje is eigenlijk een gevulde cirkel. Om die te tekenen gebruiken we de volgende functie:
+
+```python
+pygame.draw.circle(venster, kleur, [x, y], diameter)
+```
+
+* `venster` is de naam (variable) van het venster waarin we willen tekenen. In ons geval dus gewoon `venster`.
+* `kleur` is kleurcode voor de kleur die willen. Bvb. `(255, 255, 255)`, of de naam van onze constante met de juiste kleur.
+* `x` en `y` zijn de getallen van de coördinaten voor het midden van de cirkel. Kies zelf de getallen die je wil. Het eerlijkst voor beide spelers is als de bal start in het midden van het speelveld!
+* `diameter` is een getal voor de diameter van de cirkel. Dus hoe groot de bal zal zijn. Probeer maar verschillende getallen en kies wat je zelf goed vindt.
 
 ## Stap 3: Bal laten bewegen en botsen
 

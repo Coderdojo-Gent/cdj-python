@@ -1,0 +1,56 @@
+<mxfile host="Electron" modified="2023-09-24T07:17:22.666Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="kK4ASIRqmxmt1qJPA_Ts" version="21.1.2" type="device">
+  <diagram name="Page-1" id="dSXf202UmAQr6QqY9vT1">
+    <mxGraphModel dx="2072" dy="922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IPZVipy1gVgAvXjCeuIr-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="120" width="800" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="IPZVipy1gVgAvXjCeuIr-3" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="IPZVipy1gVgAvXjCeuIr-1" target="IPZVipy1gVgAvXjCeuIr-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="240" as="sourcePoint" />
+            <mxPoint x="350" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IPZVipy1gVgAvXjCeuIr-4" value="breedte = 800" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IPZVipy1gVgAvXjCeuIr-3">
+          <mxGeometry x="0.4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IPZVipy1gVgAvXjCeuIr-5" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="IPZVipy1gVgAvXjCeuIr-1" target="IPZVipy1gVgAvXjCeuIr-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-130" y="520" as="sourcePoint" />
+            <mxPoint x="-80" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IPZVipy1gVgAvXjCeuIr-6" value="hoogte = 600" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IPZVipy1gVgAvXjCeuIr-5">
+          <mxGeometry x="0.6333" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IPZVipy1gVgAvXjCeuIr-7" value="(0, 0)" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;align=left;labelPosition=right;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="110" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IPZVipy1gVgAvXjCeuIr-8" value="(800, 0)" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;align=left;labelPosition=right;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="790" y="110" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IPZVipy1gVgAvXjCeuIr-9" value="(0, 600)" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;align=left;labelPosition=right;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="710" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IPZVipy1gVgAvXjCeuIr-10" value="(800, 600)" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;align=left;labelPosition=right;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="790" y="710" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IPZVipy1gVgAvXjCeuIr-11" value="(400, 0)" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;align=left;labelPosition=right;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="390" y="110" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IPZVipy1gVgAvXjCeuIr-12" value="(0, 300)" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;align=left;labelPosition=right;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="410" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IPZVipy1gVgAvXjCeuIr-13" value="(400, 300)" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;align=left;labelPosition=right;verticalLabelPosition=top;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="390" y="410" width="20" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
