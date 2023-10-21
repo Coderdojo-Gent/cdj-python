@@ -7,8 +7,6 @@ VENSTER_HOOGTE = 600
 KLEUR_ZWART = (0, 0, 0)
 KLEUR_WIT = (255, 255, 255)
 
-BAL_X_SNELHEID = -2
-BAL_Y_SNELHEID = -1
 BAL_DIAMETER = 10
 BAL_STRAAL = int(BAL_DIAMETER / 2)
 
@@ -18,12 +16,14 @@ PALET_MARGE = 40
 
 bal_x = int(VENSTER_BREEDTE / 2)
 bal_y = int(VENSTER_HOOGTE / 2)
+bal_x_snelheid = 2
+bal_y_snelheid = 2
 
 palet_1_x = PALET_MARGE
-palet_1_y = int(VENSTER_HOOGTE / 2) - int(PALET_HOOGTE / 2)
+palet_1_y = int(VENSTER_HOOGTE/2 - PALET_HOOGTE/2)
 
 palet_2_x = VENSTER_BREEDTE - PALET_MARGE - PALET_BREEDTE
-palet_2_y = int(VENSTER_HOOGTE / 2) - int(PALET_HOOGTE / 2)
+palet_2_y = int(VENSTER_HOOGTE/2 - PALET_HOOGTE/2)
 
 score_1 = 0
 score_2 = 0
@@ -32,11 +32,12 @@ pygame.init()
 venster = pygame.display.set_mode((VENSTER_BREEDTE, VENSTER_HOOGTE))
 clock = pygame.time.Clock()
 
-while True:
+stoppen = False
+while not stoppen:
     for event in pygame.event.get():
         # print(event)
         if event.type == pygame.QUIT:
-            pygame.quit()
+            stoppen = True
 
     pressed = pygame.key.get_pressed()
     if pressed[pygame.K_w]:
@@ -48,21 +49,26 @@ while True:
     elif pressed[pygame.K_DOWN]:
         palet_2_y += 2
 
-    if bal_y <= BAL_STRAAL or bal_y >= VENSTER_HOOGTE - BAL_STRAAL:
-        BAL_Y_SNELHEID *= -1
+    # Bal bots met rand onder
+    if bal_y + BAL_STRAAL >= VENSTER_HOOGTE:
+        bal_y_snelheid = bal_y_snelheid * -1
+
+    # Bal bots met rand boven
+    if bal_y - BAL_STRAAL <= 0:
+        bal_y_snelheid = bal_y_snelheid * -1
+
 
     # Palet 1 raakt de bal
     if (bal_x <= PALET_MARGE + PALET_BREEDTE) and (bal_x > PALET_MARGE):
         if (bal_y > palet_1_y) and (bal_y < palet_1_y + PALET_HOOGTE):
-            BAL_X_SNELHEID *= -1
+            bal_x_snelheid *= -1
 
     # Palet 2 raakt de bal
     if (bal_x >= VENSTER_BREEDTE - PALET_MARGE - PALET_BREEDTE) and (
         bal_x < VENSTER_BREEDTE - PALET_MARGE
     ):
-        print("XXXXXXXXX")
         if (bal_y > palet_2_y) and (bal_y < palet_2_y + PALET_HOOGTE):
-            BAL_X_SNELHEID *= -1
+            bal_x_snelheid *= -1
 
     # Speler 2 scoort
     if bal_x <= BAL_STRAAL or bal_x >= VENSTER_BREEDTE - BAL_STRAAL:
@@ -76,8 +82,8 @@ while True:
         bal_x = int(VENSTER_BREEDTE / 2)
         bal_y = int(VENSTER_HOOGTE / 2)
 
-    bal_x += BAL_X_SNELHEID
-    bal_y += BAL_Y_SNELHEID
+    bal_x += bal_x_snelheid
+    bal_y += bal_y_snelheid
 
     venster.fill(KLEUR_ZWART)
     pygame.draw.rect(
