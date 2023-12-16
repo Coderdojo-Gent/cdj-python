@@ -124,10 +124,10 @@ Tip: een lus waarbij de variable `x` de waardes 0 tot 3 zal hebben kan je zo mak
 
 ```python
 for x in range(4):
-    print(f{x is {x}})
+    print(f"x is {x}")
 ```
 
-Als het good is krijgen we nu een speelveld dat er zo uit ziet:
+Als het goed is krijgen we nu een speelveld dat er zo uit ziet:
 
 |       |       |       |       |       |       |
 | ----- | ----- | ----- | ----- | ----- | ----- |
