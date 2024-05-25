@@ -216,3 +216,23 @@ palet_2_y = int(VENSTER_HOOGTE/2 - PALET_HOOGTE/2)
 ```
 
 Probeer nu zelf de code voor de `pygame.draw.rect` functie in te vullen. We moeten 2 paletten tekenen, dus we zullen de functie 2 keer moeten gebruiken.
+
+Om de paletten te laten bewegen, moeten we een nieuw event toevoegen aan de eventloop.
+
+```
+while not stoppen:
+    # Bekijk alle events (gebeurtenissen)
+    for event in pygame.event.get():
+        print(event)
+
+        # Hoe de paletten laten bewegen
+        if event.type == pygame.KEYDOWN:
+          if event.key == pygame.K_a:
+              palet_1_y += 10
+          if event.key == pygame.K_q:
+              palet_1_y -= 10
+          if event.key == pygame.K_DOWN:
+              palet_2_y += 10
+          if event.key == pygame.K_UP:
+              palet_2_y -= 10
+```
