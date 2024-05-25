@@ -236,3 +236,14 @@ while not stoppen:
           if event.key == pygame.K_UP:
               palet_2_y -= 10
 ```
+## Stap 6: De bal laten botsen tegen de paletten
+
+Op dit moment willen we ervoor zorgen dat de bal kan botsen tegen de paletten. 
+
+Als de bal niet tegen de paletten botst maar tegen de linkerlijn of rechterlijn botst achter de platten, moet de bal terug in het midden verschijnen. 
+
+Kan je er nu ook voor zorgen dat de bal in een willekeurige richting vertrekt? Tot nu toe ging de bal steeds naar rechts.
+
+## Stap 7: Score toevoegen
+
+## Stap 8: Gebruik maken van modules
