@@ -225,6 +225,10 @@ while not stoppen:
     for event in pygame.event.get():
         print(event)
 
+        # De event "pygame.QUIT" krijgen we als het venster wordt gesloten
+        if event.type == pygame.QUIT:
+            stoppen = True
+
         # Hoe de paletten laten bewegen
         if event.type == pygame.KEYDOWN:
           if event.key == pygame.K_a:
