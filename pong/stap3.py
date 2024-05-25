@@ -7,8 +7,8 @@ VENSTER_HOOGTE = 600
 KLEUR_ZWART = (0, 0, 0)
 KLEUR_WIT = (255, 255, 255)
 
-bal_x = 400
-bal_y = 300
+bal_x = int(VENSTER_BREEDTE / 2)
+bal_y = int(VENSTER_HOOGTE / 2)
 bal_x_snelheid = 2
 bal_y_snelheid = 2
 
