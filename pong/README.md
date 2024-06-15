@@ -242,12 +242,28 @@ while not stoppen:
 ```
 ## Stap 6: De bal laten botsen tegen de paletten
 
-Op dit moment willen we ervoor zorgen dat de bal kan botsen tegen de paletten. 
+Vervolgens willen we ervoor zorgen dat de bal kan botsen tegen de paletten. 
 
 Als de bal niet tegen de paletten botst maar tegen de linkerlijn of rechterlijn botst achter de platten, moet de bal terug in het midden verschijnen. 
 
 Kan je er nu ook voor zorgen dat de bal in een willekeurige richting vertrekt? Tot nu toe ging de bal steeds naar rechts.
 
-## Stap 7: Score toevoegen
+## Stap 7: De paletten sneller en vloeiender laten bewegen
 
-## Stap 8: Gebruik maken van modules
+Op dit moment bewegen de paletjes enkel wanneer een toest wordt ingedrukt. Maar dit is niet handig tijdens het spel. We gaan dit nu aanpassen zodat ze ook blijven bewegen wanneer we de toets ingedrukt houden.
+
+Hiervoor dienen we naast "for event" (iets dat anders is = een event) ook te kijken voor toetsen die nog steeds ingedrukt zijn en dat kan met "key.get_pressed()".
+
+Voeg volgende code toe aan je "while not stoppen:" lus van het spel.
+
+```
+    keys = pygame.key.get_pressed()  # Hier controleren we of er een toets is ingedrukt
+    if keys[pygame.K_UP]:
+        palet_2_y -= 10
+    if keys[pygame.K_DOWN]:
+        palet_2_y += 10
+```
+
+## Stap 8: Score toevoegen
+
+## Stap 9: Gebruik maken van modules
