@@ -300,7 +300,7 @@ Om te weten wanneer de vogel _door_ de buizen gevlogen is gebruiken we volgende 
 
 - ALS
   - De vogel tussen de buizen is geweest (`vliegt_door_buis`), EN
-  - De buizen groep is niet leeg (`buis_groep.has()`), EN
+  - De buizen groep is niet leeg (`buis_groep.sprites()`), EN
   - De x-waarde van het midden van de vogel (`vogel_groep.sprites()[0].rect.x`) is groter dan de rechterkant van de eerste buis `buis_groep.sprites()[0].rect.right`
 - DAN
   - Maak `vliegt_door_buis = False`
@@ -311,7 +311,7 @@ Je krijgt de juiste code hiervoor maar probeer wel de logica te snappen! Volgend
 ```python
 if (
     not vliegt_door_buis
-    and buis_groep.has()
+    and buis_groep.sprites()
     and buis_groep.sprites()[0].rect.left
     < vogel_groep.sprites()[0].rect.x
     < buis_groep.sprites()[0].rect.right
@@ -319,7 +319,7 @@ if (
     vliegt_door_buis = True
 if (
     vliegt_door_buis
-    and buis_groep.has()
+    and buis_groep.sprites()
     and vogel_groep.sprites()[0].rect.x > buis_groep.sprites()[0].rect.right
 ):
     vliegt_door_buis = False

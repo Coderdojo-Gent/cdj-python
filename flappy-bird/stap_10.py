@@ -117,7 +117,7 @@ while True:
 
         if (
             not vliegt_door_buis
-            and buis_groep.has
+            and buis_groep.sprites()
             and buis_groep.sprites()[0].rect.left
             < vogel_groep.sprites()[0].rect.x
             < buis_groep.sprites()[0].rect.right
@@ -125,7 +125,7 @@ while True:
             vliegt_door_buis = True
         if (
             vliegt_door_buis
-            and buis_groep.has
+            and buis_groep.sprites()
             and vogel_groep.sprites()[0].rect.x > buis_groep.sprites()[0].rect.right
         ):
             vliegt_door_buis = False

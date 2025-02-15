@@ -134,7 +134,7 @@ while True:
         # Score + 1 als de vogel door de buizen vliegt
         if (
             not vliegt_door_buis
-            and buis_groep.has()
+            and buis_groep.sprites()
             and buis_groep.sprites()[0].rect.left
             < vogel_groep.sprites()[0].rect.x
             < buis_groep.sprites()[0].rect.right
@@ -142,12 +142,13 @@ while True:
             vliegt_door_buis = True
         if (
             vliegt_door_buis
-            and buis_groep.has()
+            and buis_groep.sprites()
             and vogel_groep.sprites()[0].rect.x > buis_groep.sprites()[0].rect.right
         ):
             vliegt_door_buis = False
             score += 1
 
+        print(vliegt_door_buis)
         vogel_groep.update()
         buis_groep.update()
 
