@@ -6,6 +6,12 @@ Een verzameling Python opdrachten en links naar leuke opdrachten in andere locat
 
 [Python installeren](INSTALL.md)
 
+Is Python installeren even geen optie, dan kan je volgende websites uitproberen waar je rechtstreeks code kan schrijven en uitvoeren. Je zult dan wel niet alle opdrachten kunnen maken maar dit is wel een prima optie om (snel) te starten!
+- https://www.w3schools.com/python/trypython.asp?filename=demo_compiler
+- https://www.online-python.com/
+- https://www.onlineide.pro/playground/python
+- https://python-fiddle.com/ (hier kan je wel extra Python packages installeren!)
+
 ## Opdrachten
 
 | Niveau           | Naam                    | Link                                                                                                                        |
