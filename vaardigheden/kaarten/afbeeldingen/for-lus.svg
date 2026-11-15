@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="600" height="120" font-family="Arial, Helvetica, sans-serif">
+  <defs><marker id="pijl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+  <g font-size="14" fill="#555" text-anchor="middle">
+    <text x="70" y="20">ronde 1</text><text x="190" y="20">ronde 2</text><text x="310" y="20">ronde 3</text><text x="430" y="20">ronde 4</text>
+  </g>
+  <g fill="#eef3fa" stroke="#4a90d9" stroke-width="3">
+    <circle cx="70" cy="60" r="26"/><circle cx="190" cy="60" r="26"/><circle cx="310" cy="60" r="26"/><circle cx="430" cy="60" r="26"/>
+  </g>
+  <circle cx="550" cy="60" r="26" fill="none" stroke="#bbb" stroke-width="3" stroke-dasharray="6 5"/>
+  <g font-size="24" font-weight="bold" text-anchor="middle">
+    <text x="70" y="68">0</text><text x="190" y="68">1</text><text x="310" y="68">2</text><text x="430" y="68">3</text><text x="550" y="68" fill="#bbb">4</text>
+  </g>
+  <g stroke="#555" stroke-width="2.5" marker-end="url(#pijl)">
+    <line x1="98" y1="60" x2="160" y2="60"/><line x1="218" y1="60" x2="280" y2="60"/><line x1="338" y1="60" x2="400" y2="60"/>
+  </g>
+  <line x1="458" y1="60" x2="520" y2="60" stroke="#bbb" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <g font-size="16" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace">
+    <text x="70" y="110">i = 0</text><text x="190" y="110">i = 1</text><text x="310" y="110">i = 2</text><text x="430" y="110">i = 3</text>
+  </g>
+  <text x="550" y="110" text-anchor="middle" font-size="15" font-weight="bold" fill="#d9534f">stop!</text>
+</svg>
