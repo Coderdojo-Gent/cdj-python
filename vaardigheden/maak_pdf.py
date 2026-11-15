@@ -10,7 +10,6 @@ het pad mee: python maak_pdf.py --browser "C:/pad/naar/msedge.exe"
 Resultaat in de map pdf/:
 - een PDF per kaart (1 A4-pagina per kaart)
 - alle-kaarten.pdf met alle kaarten na elkaar
-- projecten.pdf met de voorkennis per project
 """
 
 import argparse
@@ -193,15 +192,6 @@ def main():
             werkmap,
         )
         print(f"  {alles.relative_to(MAP)}")
-
-        projecten = PDF / "projecten.pdf"
-        print_pdf(
-            browser,
-            pagina("Projecten", [naar_html(MAP / "projecten.md")]),
-            projecten,
-            werkmap,
-        )
-        print(f"  {projecten.relative_to(MAP)}")
 
     if te_lang:
         print("\nLet op, deze kaarten passen niet op 1 pagina:")

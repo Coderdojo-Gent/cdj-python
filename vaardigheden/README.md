@@ -2,7 +2,7 @@
 
 Elke kaart legt 1 ding uit dat je nodig hebt om Python-projecten te maken: wat het is, een voorbeeld, waar je moet op letten, en een kleine opdracht om het zelf te proberen. Elke kaart past op 1 A4-blad.
 
-- **Voor je aan een project begint**: kijk in [projecten.md](projecten.md) wat je al moet kennen.
+- **Voor je aan een project begint**: kijk in de [tabel met opdrachten](../README.md#opdrachten) wat je al moet kennen.
 - **Zit je vast in een project?** Neem de kaart over dat onderwerp erbij.
 - **Coaches**: print de kaarten 1 keer en leg ze klaar. Zo moet je niet steeds hetzelfde opnieuw uitleggen.
 
@@ -29,7 +29,7 @@ Elke kaart legt 1 ding uit dat je nodig hebt om Python-projecten te maken: wat h
 | 17 | [Klassen en objecten](kaarten/17-klassen.md) | [pdf](pdf/17-klassen.pdf) |
 | 18 | [Foutmeldingen lezen](kaarten/18-foutmeldingen.md) | [pdf](pdf/18-foutmeldingen.pdf) |
 
-Alles in 1 bestand om te printen: [alle-kaarten.pdf](pdf/alle-kaarten.pdf). De voorkennis per project: [projecten.pdf](pdf/projecten.pdf).
+Alles in 1 bestand om te printen: [alle-kaarten.pdf](pdf/alle-kaarten.pdf).
 
 ## Een kaart toevoegen of aanpassen
 
@@ -37,7 +37,7 @@ De kaarten zijn gewone Markdown-bestanden in [kaarten/](kaarten/). Tekeningen st
 
 - Een nieuwe kaart krijgt een nummer en een naam: `19-onderwerp.md`, met de titel als `# Titel` op de eerste regel.
 - Hou een kaart kort genoeg voor 1 A4-blad.
-- Pas ook [projecten.md](projecten.md) aan als een project de nieuwe kaart nodig heeft.
+- Pas ook de [tabel met opdrachten](../README.md#opdrachten) aan als een opdracht de nieuwe kaart nodig heeft.
 
 Maak daarna de PDF's opnieuw. Je hebt Chrome, Chromium of Edge nodig:
 
