@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160" font-family="Arial, Helvetica, sans-serif">
+  <defs><marker id="pijl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+  <rect x="10" y="10" width="200" height="140" rx="8" fill="#2f6db5"/>
+  <text x="110" y="38" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace">class Hond</text>
+  <line x1="25" y1="50" x2="195" y2="50" stroke="#cfe0f5" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <g font-size="14" fill="#fff" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace">
+    <text x="28" y="74">naam</text><text x="28" y="94">leeftijd</text><text x="28" y="120">blaf()</text><text x="28" y="140">verjaar()</text>
+  </g>
+  <text x="200" y="141" text-anchor="end" font-size="11" fill="#cfe0f5">bouwtekening</text>
+  <g stroke="#555" stroke-width="2.5" marker-end="url(#pijl)">
+    <line x1="214" y1="60" x2="340" y2="40"/><line x1="214" y1="100" x2="340" y2="120"/>
+  </g>
+  <text x="278" y="84" text-anchor="middle" font-size="13" fill="#555">objecten maken</text>
+  <rect x="345" y="8" width="245" height="64" rx="8" fill="#eef3fa" stroke="#4a90d9" stroke-width="2.5"/>
+  <rect x="345" y="88" width="245" height="64" rx="8" fill="#eef3fa" stroke="#4a90d9" stroke-width="2.5"/>
+  <g font-size="14" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace">
+    <text x="358" y="32" font-weight="bold">rex = Hond("Rex", 3)</text>
+    <text x="358" y="56" fill="#444">naam="Rex"  leeftijd=3</text>
+    <text x="358" y="112" font-weight="bold">bobby = Hond("Bobby", 7)</text>
+    <text x="358" y="136" fill="#444">naam="Bobby"  leeftijd=7</text>
+  </g>
+</svg>

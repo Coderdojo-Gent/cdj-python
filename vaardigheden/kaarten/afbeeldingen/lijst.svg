@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="600" height="120" font-family="Arial, Helvetica, sans-serif">
+  <text x="8" y="56" font-size="17" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace">kleuren</text>
+  <g fill="#eef3fa" stroke="#4a90d9" stroke-width="3">
+    <rect x="115" y="25" width="90" height="48"/><rect x="205" y="25" width="90" height="48"/><rect x="295" y="25" width="90" height="48"/><rect x="385" y="25" width="90" height="48"/><rect x="475" y="25" width="90" height="48"/>
+  </g>
+  <g font-size="16" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace">
+    <text x="160" y="55">"rood"</text><text x="250" y="55">"geel"</text><text x="340" y="55">"paars"</text><text x="430" y="55">"roze"</text><text x="520" y="55">"blauw"</text>
+  </g>
+  <g font-size="20" font-weight="bold" fill="#e08e0b" text-anchor="middle">
+    <text x="160" y="97">0</text><text x="250" y="97">1</text><text x="340" y="97">2</text><text x="430" y="97">3</text><text x="520" y="97">4</text>
+  </g>
+  <g font-size="13" fill="#999" text-anchor="middle">
+    <text x="160" y="115">-5</text><text x="250" y="115">-4</text><text x="340" y="115">-3</text><text x="430" y="115">-2</text><text x="520" y="115">-1</text>
+  </g>
+  <text x="8" y="97" font-size="13" fill="#e08e0b">plaats (index)</text>
+</svg>

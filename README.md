@@ -12,6 +12,10 @@ Is Python installeren even geen optie, dan kan je volgende websites uitproberen 
 - https://www.onlineide.pro/playground/python
 - https://python-fiddle.com/ (hier kan je wel extra Python packages installeren!)
 
+## Vaardigheidskaarten
+
+Printbare kaarten die telkens 1 onderwerp uitleggen (lussen, lijsten, functies...), en per opdracht wat je al moet kennen voor je begint: [vaardigheden/](vaardigheden/README.md) en [projecten.md](vaardigheden/projecten.md).
+
 ## Opdrachten
 
 | Niveau           | Naam                    | Link                                                                                                                        |

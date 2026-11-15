@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 112" width="600" height="112" font-family="Arial, Helvetica, sans-serif">
+  <defs><marker id="pijl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+  <rect x="8" y="8" width="128" height="54" rx="8" fill="#fff3dd" stroke="#f5a623" stroke-width="2.5"/>
+  <rect x="160" y="8" width="128" height="54" rx="8" fill="#eef3fa" stroke="#4a90d9" stroke-width="2.5"/>
+  <rect x="312" y="8" width="128" height="54" rx="8" fill="#e8f6e8" stroke="#3c9d3c" stroke-width="2.5"/>
+  <rect x="464" y="8" width="128" height="54" rx="8" fill="#f3e8f7" stroke="#8e44ad" stroke-width="2.5"/>
+  <g font-size="15" font-weight="bold" text-anchor="middle">
+    <text x="72" y="31">1. events</text><text x="224" y="31">2. bewegen</text><text x="376" y="31">3. tekenen</text><text x="528" y="31">4. wachten</text>
+  </g>
+  <g font-size="11" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace">
+    <text x="72" y="51">toetsen, sluiten</text><text x="224" y="51">x = x + 2</text><text x="376" y="51">fill, draw, update</text><text x="528" y="51">klok.tick(60)</text>
+  </g>
+  <g stroke="#555" stroke-width="2.5" marker-end="url(#pijl)">
+    <line x1="136" y1="35" x2="156" y2="35"/><line x1="288" y1="35" x2="308" y2="35"/><line x1="440" y1="35" x2="460" y2="35"/>
+  </g>
+  <polyline points="528,62 528,84 72,84 72,66" fill="none" stroke="#555" stroke-width="2.5" marker-end="url(#pijl)"/>
+  <text x="300" y="104" text-anchor="middle" font-size="13" fill="#555">en opnieuw: 60 keer per seconde, elke ronde is 1 beeldje</text>
+</svg>

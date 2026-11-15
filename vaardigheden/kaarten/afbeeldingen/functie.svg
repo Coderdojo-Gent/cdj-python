@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 130" width="600" height="130" font-family="Arial, Helvetica, sans-serif">
+  <defs><marker id="pijl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+  <text x="70" y="40" text-anchor="middle" font-size="14" fill="#555">argumenten</text>
+  <text x="70" y="78" text-anchor="middle" font-size="26" font-weight="bold" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace">3, 4</text>
+  <line x1="122" y1="68" x2="186" y2="68" stroke="#555" stroke-width="3" marker-end="url(#pijl)"/>
+  <rect x="190" y="18" width="225" height="100" rx="14" fill="#fff3dd" stroke="#f5a623" stroke-width="3"/>
+  <text x="302" y="58" text-anchor="middle" font-size="15" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace">def tel_op(a, b):</text>
+  <text x="302" y="88" text-anchor="middle" font-size="15" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace">  return a + b</text>
+  <line x1="415" y1="68" x2="479" y2="68" stroke="#555" stroke-width="3" marker-end="url(#pijl)"/>
+  <text x="535" y="40" text-anchor="middle" font-size="14" fill="#555">antwoord</text>
+  <text x="535" y="80" text-anchor="middle" font-size="30" font-weight="bold" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace">7</text>
+</svg>

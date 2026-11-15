@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="600" height="120" font-family="Arial, Helvetica, sans-serif">
+  <g transform="translate(15,0)">
+    <rect x="0" y="38" width="170" height="70" rx="8" fill="#eef3fa" stroke="#4a90d9" stroke-width="3"/>
+    <rect x="12" y="10" width="110" height="28" rx="6" fill="#f5a623"/>
+    <text x="67" y="29" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">naam</text>
+    <text x="85" y="82" text-anchor="middle" font-size="22" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" fill="#1d1d1f">"Lotte"</text>
+  </g>
+  <g transform="translate(215,0)">
+    <rect x="0" y="38" width="170" height="70" rx="8" fill="#eef3fa" stroke="#4a90d9" stroke-width="3"/>
+    <rect x="12" y="10" width="110" height="28" rx="6" fill="#f5a623"/>
+    <text x="67" y="29" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">leeftijd</text>
+    <text x="85" y="82" text-anchor="middle" font-size="22" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" fill="#1d1d1f">12</text>
+  </g>
+  <g transform="translate(415,0)">
+    <rect x="0" y="38" width="170" height="70" rx="8" fill="#eef3fa" stroke="#4a90d9" stroke-width="3"/>
+    <rect x="12" y="10" width="110" height="28" rx="6" fill="#f5a623"/>
+    <text x="67" y="29" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">levens</text>
+    <text x="85" y="82" text-anchor="middle" font-size="22" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" fill="#1d1d1f">10</text>
+  </g>
+</svg>

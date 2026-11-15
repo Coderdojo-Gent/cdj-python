@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 165" width="600" height="165" font-family="Arial, Helvetica, sans-serif">
+  <defs><marker id="pijl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+  <text x="155" y="18" text-anchor="middle" font-size="15" font-weight="bold" fill="#e08e0b">sleutel (key)</text>
+  <text x="445" y="18" text-anchor="middle" font-size="15" font-weight="bold" fill="#2f6db5">waarde (value)</text>
+  <g fill="#fff3dd" stroke="#f5a623" stroke-width="3">
+    <rect x="80" y="30" width="150" height="36" rx="6"/><rect x="80" y="76" width="150" height="36" rx="6"/><rect x="80" y="122" width="150" height="36" rx="6"/>
+  </g>
+  <g fill="#eef3fa" stroke="#4a90d9" stroke-width="3">
+    <rect x="370" y="30" width="150" height="36" rx="6"/><rect x="370" y="76" width="150" height="36" rx="6"/><rect x="370" y="122" width="150" height="36" rx="6"/>
+  </g>
+  <g stroke="#555" stroke-width="2.5" marker-end="url(#pijl)">
+    <line x1="234" y1="48" x2="364" y2="48"/><line x1="234" y1="94" x2="364" y2="94"/><line x1="234" y1="140" x2="364" y2="140"/>
+  </g>
+  <g font-size="17" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace">
+    <text x="155" y="54">"Jan"</text><text x="155" y="100">"Sarah"</text><text x="155" y="146">"Hakim"</text>
+    <text x="445" y="54">12</text><text x="445" y="100">10</text><text x="445" y="146">13</text>
+  </g>
+</svg>
