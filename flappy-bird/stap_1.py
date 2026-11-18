@@ -17,6 +17,7 @@ while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
+            quit()  # Python stoppen
 
     venster.blit(ACHTERGROND, (0, 0))
     venster.blit(GROND, (0, ACHTERGROND.get_height()))
