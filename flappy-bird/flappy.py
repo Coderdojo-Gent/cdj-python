@@ -98,6 +98,7 @@ while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
+            quit()  # Python stoppen
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
                 vogel_groep.update(vlieg_omhoog=True)
@@ -109,7 +110,6 @@ while True:
     grond_x -= 5
     if grond_x + GROND.get_width() <= VENSTER_BREEDTE:
         grond_x = 0
-    venster.blit(GROND, (grond_x, ACHTERGROND.get_height()))
 
     venster.blit(ACHTERGROND, (0, 0))
 
@@ -148,7 +148,6 @@ while True:
             vliegt_door_buis = False
             score += 1
 
-        print(vliegt_door_buis)
         vogel_groep.update()
         buis_groep.update()
 
@@ -159,6 +158,8 @@ while True:
         font.render(str(score), True, wit),
         (int(VENSTER_BREEDTE // 2), 20),
     )
+
+    venster.blit(GROND, (grond_x, ACHTERGROND.get_height()))
 
     # Game over als de vogel een van de buizen raakt
     if (

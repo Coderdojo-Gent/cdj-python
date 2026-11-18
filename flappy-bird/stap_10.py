@@ -87,6 +87,7 @@ while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
+            quit()  # Python stoppen
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
                 vogel_groep.update(vlieg_omhoog=True)
